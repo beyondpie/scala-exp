@@ -1,32 +1,41 @@
-# scala-exp
-Play with Scala
-
+* scala-exp: Play with Scala
 - Test the usage of scala as
   - contruction of large system
   - daily usage
   - interact with python
   - interact with R
   - interact with JavaScript
-
 Finaly goal is to use scala for my research on bioinformatics.
 
-# * Installation
+* Installation
 brew install coursier/formulas/coursier && cs setup
 # Add [install_path]/coursier/bin to PATH
 # Force to use scala 2 since majority of the packages
 # support scala 2.13 as latest or scala 3.1 (few)
 cs install scala:2.13.13 scalac:2.13.13
 
-# * set up JAVE HOME
+* set up JAVE HOME
 # java -XshowSettings:properties -version
 # Then find JAVA_HOME and add it to env.
 
-# * set up ensime-mode in Emacs
+* set up ensime-mode in Emacs
 I use ensime before, and really like it. Unluckly, the Scala Center is
 now officially support lsp-metal. Ensime is now a private repo. So
 just try it.
 https://ensime.github.io
 - seems that it has macro error when compiling, not sure why
 - make emacs crash
-# * metals for lsp/eglot
+
+* metals for lsp/eglot
 coursier install metals
+
+* TODO
+** learn a typical scala project structure with sbt
+** get familiar with sbt
+** get familiar with scala-cli, especially how to
+   - write scala as script
+   - use scala repl
+** learn nlp breeze, which is a numeric library for scala
+** try scalapy package
+** try rscala package
+** learn scala.js to see how to plot figures 

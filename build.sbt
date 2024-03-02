@@ -6,5 +6,7 @@ lazy val hello = (project in file("."))
     name := "Hello"
   )
 
-# for rscala
+// for rscala
 crossScalaVersions := Seq("2.11.12", "2.12.7", "2.13.0-M5")
+
+libraryDependencies += "org.ddahl" %% "rscala" % "3.2.19"
